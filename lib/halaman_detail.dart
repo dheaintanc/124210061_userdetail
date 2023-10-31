@@ -10,8 +10,8 @@ class HalamanDetail extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Detail User ${id}'),
-        backgroundColor: Colors.green,
+        title: Text('User Detail ${id}'),
+        backgroundColor: Colors.deepPurpleAccent,
       ),
       body: FutureBuilder(
         future: ApiDataSource.instance.loadDetailUser(id),
