@@ -3,7 +3,6 @@ import 'package:httprequest/api_datasource.dart';
 import 'package:httprequest/halaman_detail.dart';
 import 'users_model.dart';
 
-
 class HalamanUsers extends StatelessWidget {
   const HalamanUsers({super.key});
 
@@ -11,8 +10,8 @@ class HalamanUsers extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text ('List Users'),
-        backgroundColor: Colors.green,
+        title: const Text ('User List'),
+        backgroundColor: Colors.deepPurpleAccent,
       ),
       body: FutureBuilder(
           future: ApiDataSource.instance.loadUsers(),
